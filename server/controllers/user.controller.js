@@ -53,7 +53,7 @@ exports.userLogin = async (req, res) => {
       id: user._id,
       name: user.name,
       email: user.email,
-      phoneNumber: user.phoneNumber,
+      phoneNumber: user.phoneNumber
     };
 
     const token = await jwt.sign(payload, secretOrKey);
