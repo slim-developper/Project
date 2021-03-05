@@ -22,3 +22,11 @@ console.log('DATA BASE ERROR',error)
 module.exports=connectDB;
 
 //npm i -D config: dev dependencies
+//then+catch:asynchrone(async+await)
+//req take time
+//async pass the next instruction
+//npm i -D config: dev dependencies
+
+//npm i -D config: dev dependencies
+//password: EWlIRb9FqemrW3yP
+//IP-Adress:197.19.211.210/32 

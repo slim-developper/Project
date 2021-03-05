@@ -1,4 +1,4 @@
 {
     "mongo-URI": "mongodb://localhost:27017/authentification",
-    "secretOrKey" : " my secret"
+    "secretOrKey" : " mysecret"
 }

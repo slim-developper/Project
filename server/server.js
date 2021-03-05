@@ -29,4 +29,4 @@ app.listen(PORT,(err)=>
 
   
  //npm run dev
-//2:34
+//npm I concurrently: Another option would be to just run all commands in separate terminals
