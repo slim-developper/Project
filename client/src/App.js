@@ -1,4 +1,4 @@
-
+import Register from './components/Register'
 import './App.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
    <h1>
      hi, front-end connected !!!
      </h1>  
+     <Register/>
     </div>
   );
 }
