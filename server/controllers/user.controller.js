@@ -3,8 +3,7 @@ const bcrypt = require("bcryptjs");
 
 // const config = require("config");
 
-require("dotenv").config({ path: "../config/.env" });
-
+require('dotenv').config({path: '../config/.env'})
 const secretOrKey = process.env.secretOrKey;
 
 const jwt = require("jsonwebtoken");

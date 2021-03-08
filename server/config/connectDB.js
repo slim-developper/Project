@@ -3,7 +3,10 @@ const mongoose=require('mongoose')
 
 //call config
 const config=require('config')
-const mongoURI=config.get('mongo-URI')
+
+const dotenv=require('dotenv')
+dotenv.config({path:'./config/.env'});
+//const mongoURI=config.get('mongo-URI')
 
 //connect to database
 const connectDB = async ()=>{
@@ -11,7 +14,7 @@ const connectDB = async ()=>{
 //req take time
 //async pass the next instruction
 try {
-    mongoose.connect(mongoURI,{useNewUrlParser:true,useUnifiedTopology:true});
+    mongoose.connect(MONGO_URI,{useNewUrlParser:true,useUnifiedTopology:true});
     console.log('DATABASE CONNECTED SUCCESSFULLY')
     
 } catch (error) {

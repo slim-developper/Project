@@ -1,8 +1,10 @@
 const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const passport = require("passport");
-const config = require("config");
-const secretOrKey = config.get("secretOrKey");
+//const config = require("config");
+require('dotenv').config({path: '../config/.env'})
+const secretOrKey = process.env.secretOrKey;
+//secretOrKey dont allow .env going to github
 const User = require("../models/User");
 
 const opts = {
